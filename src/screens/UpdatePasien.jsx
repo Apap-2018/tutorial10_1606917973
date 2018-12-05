@@ -43,7 +43,7 @@ export class UpdatePasien extends React.Component {
 					let last = name.pop()
 					name.reduce((prev, next) => {
 						return prev[next] = prev[next] || {};
-					}, dataJson)[key] = val
+					}, dataJson)[last] = val
 				} else {
 					dataJson[key] = val
 				}
